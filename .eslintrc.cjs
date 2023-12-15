@@ -23,8 +23,11 @@ module.exports = {
 			files: ['*.svelte'],
 			parser: 'svelte-eslint-parser',
 			parserOptions: {
-				parser: '@typescript-eslint/parser'
-			}
-		}
-	]
-};
+				parser: '@typescript-eslint/parser',
+			},
+		},
+	],
+	rules: {
+		'svelte/prefer-style-directive': 'error',
+	},
+}
